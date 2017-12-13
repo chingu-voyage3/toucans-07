@@ -1,0 +1,24 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.section-heading {
+  font-size: 2rem;
+  text-align: center;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.what-is-message {
+  grid-column: 1;
+}
+.fancy {
+  font-family: 'Signika', san-serif;
+  font-weight: 700;
+}
