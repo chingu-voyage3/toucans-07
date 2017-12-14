@@ -1,22 +1,26 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
 .container {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 .section-heading {
   font-size: 2rem;
+  font-weight: 300;
   text-align: center;
 }
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(2, auto);
   grid-auto-rows: minmax(100px, auto);
+  grid-gap: 20px;
+  justify-content: center;
 }
 .what-is-message {
-  grid-column: 1;
+  margin: 1rem 0 1rem 0;
 }
 .fancy {
   font-family: 'Signika', san-serif;
