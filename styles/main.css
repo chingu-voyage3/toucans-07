@@ -60,12 +60,18 @@ body {
 }
 
 .card {
-  min-height: 30vh;
+  /* min-height: 30vh; */
   background-color: #40596b;
 }
 
 .card-img {
   width: 60%;
+  padding: 2rem;
+}
+
+.card-description {
+  background-color: #fff;
+  height: 5rem;
 }
 
 .fancy {
