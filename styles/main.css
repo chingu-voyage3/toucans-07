@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Signika', 'Open Sans', sans-serif;
   font-size: 1.2rem;
   color: #4d4848;
   color: rgba(0, 0, 0, 0.75);
@@ -25,7 +25,7 @@ body {
   bottom: 0;
   position: absolute;
   height: 3px;
-  width: 200px;
+  width: 150px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -38,8 +38,8 @@ body {
   justify-content: center;
 }
 
-.what-is, .features {
-  min-height: 50vh;
+.what-is, .how-it-works {
+  min-height: 40vh;
 }
 
 .what-is p {
@@ -49,9 +49,9 @@ body {
 
 .wrapper-features {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 25%);
   grid-auto-rows: minmax(100px, auto);
-  grid-gap: 10px;
+  justify-content: center;
 }
 
 .how-it-works {
@@ -60,18 +60,22 @@ body {
 }
 
 .card {
-  /* min-height: 30vh; */
+  align-items: center;
   background-color: #40596b;
+  border-radius: 5px;
+  margin: 1rem;
 }
 
 .card-img {
   width: 60%;
-  padding: 2rem;
+  margin: 3rem auto;
 }
 
 .card-description {
   background-color: #fff;
+  padding: 1rem;
   height: 5rem;
+  text-align: center;
 }
 
 .fancy {
