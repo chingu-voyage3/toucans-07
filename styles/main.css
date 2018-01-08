@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+.what-is, .how-it-works {
+  min-height: 40vh;
+}
+
 nav ul {
   list-style-type: none;
   font-size: 20px;
@@ -35,6 +39,7 @@ nav li a:hover {
 
 header {
   background-color: #76484b;
+  min-height: 80vh;
 }
 
 .wrapper-header {
@@ -43,11 +48,13 @@ header {
   grid-template-rows: minmax(100px, auto);
   grid-gap: 10px;
   justify-content: center;
+  position: absolute;
+  top: 17%;
 }
 
 .header-txt {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 1rem;
 }
 
@@ -103,8 +110,8 @@ header {
   justify-content: center;
 }
 
-header, .what-is, .how-it-works {
-  min-height: 40vh;
+.what-is {
+  padding-bottom: 3rem;
 }
 
 .what-is p {
@@ -121,7 +128,7 @@ header, .what-is, .how-it-works {
 
 .how-it-works {
   background-color: #c74939;
-  padding: 1rem;
+  padding: 1rem 0 5rem 0;
 }
 
 .card {
