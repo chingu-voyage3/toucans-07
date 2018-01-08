@@ -89,6 +89,8 @@ header {
   font-weight: 300;
   position: relative;
   text-align: center;
+  margin: 0;
+  padding-top: 2rem;
 }
 
 .section-heading::after {
