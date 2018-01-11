@@ -45,7 +45,7 @@ header {
 
 .wrapper-header {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, 50%);
   grid-template-rows: minmax(100px, auto);
   grid-gap: 10px;
   justify-content: center;
@@ -82,8 +82,8 @@ header {
 }
 
 .robotoucan-img {
-  width: 70%;
-  padding: 5rem;
+  width: 50%;
+  padding: 9rem;
 }
 
 .container {
