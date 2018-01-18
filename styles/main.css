@@ -233,6 +233,11 @@ footer p {
   padding: 2.5rem 0 2rem 0;
 }
 
+.animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
 @keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -243,6 +248,5 @@ footer p {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
-    transition: 2s;
   }
 }
