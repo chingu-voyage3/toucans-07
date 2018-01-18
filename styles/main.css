@@ -51,6 +51,7 @@ header {
   grid-template-rows: minmax(100px, auto);
   grid-gap: 10px;
   justify-content: center;
+  overflow: hidden;
   position: relative;
 }
 
@@ -134,6 +135,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 392px);
   grid-auto-rows: minmax(100px, auto);
+  overflow: hidden;
   justify-content: center;
 }
 
@@ -229,4 +231,18 @@ footer {
 footer p {
   margin: 0;
   padding: 2.5rem 0 2rem 0;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    transition: 2s;
+  }
 }
