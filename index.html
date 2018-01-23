@@ -16,6 +16,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
   <!-- link to main stylesheet -->
   <link href="styles/main.css" type="text/css" rel="stylesheet">
+  <!-- link to responsive stylesheet -->
+  <link href="styles/responsive.css" type="text/css" rel="stylesheet">
+  <!-- font-awesome for collapsable navbar -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   <title>RoboToucan - Chingu Voyage 3 : TickyBot clone</title>
 
@@ -23,7 +27,10 @@
 
 <body>
   <nav role="navigation">
-    <!--add appropriate ids to navigation-->
+    <!--toggle for small screens-->
+    <div class="toggle">
+    	<i class="fa fa-bars menu"></i>
+    </div>
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -139,6 +146,12 @@
   <script type="text/javascript">
     $('.js-animate').whenInViewport(function(div) {
       div.addClass('animated fadeInDown');
+    });
+
+    $(document).ready(function(){
+    	$('.menu').click(function(){
+    		$('ul').toggleClass('active');
+    	});
     });
   </script>
 </body>

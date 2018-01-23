@@ -1,0 +1,22 @@
+@media(max-width: 768px) {
+/* navbar */
+	.toggle {
+			display: block;
+			cursor: pointer;
+		}
+	nav ul {
+		width: 100%;
+		display: none;
+		background-color: #40596b;
+	}
+	nav ul li {
+		display: block;
+	}
+	nav ul li a {
+		display: block;
+		text-align: center;
+	}
+	.active {
+		display: block;
+	}
+}
