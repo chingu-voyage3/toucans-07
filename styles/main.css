@@ -39,6 +39,18 @@ nav li a:hover {
   color: #0b2637;
 }
 
+.toggle
+  {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #0b2637;    
+    text-align: right;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 30px;
+    display: none;
+  }
+
 header {
   background-color: #76484b;
   min-height: 70vh;
@@ -238,6 +250,27 @@ footer {
 footer p {
   margin: 0;
   padding: 2.5rem 0 2rem 0;
+}
+
+#back-to-top {
+  background: none;
+  margin: 10px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+  display: none;
+  text-decoration: none;
+  color: #ff9000;
+  border: 2px solid #ff9000;
+  border-radius: 10%;
+}
+
+#back-to-top i {
+  font-size: 60px;
+  margin: -10px;
 }
 
 .animated {
