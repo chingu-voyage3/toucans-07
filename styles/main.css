@@ -80,13 +80,20 @@ header {
 }
 
 .header-img {
+  margin: auto;
+}
+
+.header-img div {
+  width: 70%;
+  height: 80%;
   background-color: #d4d4d4;
   border-radius: 50%;
+  margin: auto;
 }
 
 .robotoucan-img {
   width: 50%;
-  padding: 9rem;
+  padding: 5rem;
 }
 
 .container {
