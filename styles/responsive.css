@@ -20,3 +20,47 @@
 		display: block;
 	}
 }
+
+@media(max-width: 767px) {
+/* Call to action */
+	.cta-text {
+		font-size: 1rem;
+	}
+	.cta-text p {
+		padding: 0;
+		margin: 0;
+	}
+	#slack-logo {
+		margin-left: -50px;
+	}
+	.btn-cta {
+		font-size: 20px;
+		width: 150px;
+		height: 60px;
+		margin: 10px auto;
+	}
+	#cta a span {
+		margin-left: 45px;
+	}
+/* back-to-top */
+	#back-to-top {
+	  width: 25px;
+	  height: 25px;
+	  border: 1px solid #ff9000;
+	  padding: 0 10px 10px 10px;
+	}
+	#back-to-top i {
+  	  font-size: 50px;
+	}
+/* footer */
+	footer {
+	  font-size: 12px;
+	}
+
+@media(max-width: 600px) {
+/* back-to-call button */
+	#back-to-top a {
+		position: top;		
+	}
+}
+
