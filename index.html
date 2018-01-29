@@ -55,16 +55,16 @@
   <!-- end of header -->
 
   <section class="what-is" id="about">
-    <div class="container">
+    <div class="container js-animate">
       <h2 class="section-heading">What is <span class="fancy">Robo</span>Toucan</h2>
       <!-- beginning of wrapper -->
       <div class="wrapper-about">
-        <div>
+        <div class="js-animate">
           <p class="what-is-message">
             <span class="fancy">Robo</span>Toucan is a Slack Bot that lets you use support tickets on Slack. This way, you don't need to leave your beloved channel to assist your users, if you don't feel like it.
           </p>
         </div>
-        <div>
+        <div class="js-animate">
           <p class="what-is-message">
             With RoboToucan you can easily check if you've received new tickets, change their status, or write a reply, and the ticket will instantly update itself on our site.
           </p>
@@ -137,8 +137,9 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="scripts/whenInViewport.min.js"></script>
   <script type="text/javascript">
-    $('.js-animate').whenInViewport(function(div) {
-      div.addClass('animated fadeInDown');
+    let e = document.querySelectorAll('.js-animate');
+    $('.js-animate').whenInViewport(function(e) {
+      e.addClass('reveal-item');
     });
   </script>
 </body>
