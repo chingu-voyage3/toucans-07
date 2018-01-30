@@ -29,7 +29,7 @@
   <nav role="navigation" id="home">
     <!--toggle for small screens-->
     <div class="toggle">
-    	<i class="fa fa-bars menu"></i>
+      <i class="fa fa-bars menu"></i>
     </div>
     <ul>
       <li><a href="#home">Home</a></li>
@@ -65,22 +65,22 @@
 
   <section class="what-is" id="about">
     <div class="container">
-      <h2 class="section-heading">What is <span class="fancy">Robo</span>Toucan</h2>
+      <h2 class="section-heading js-animate">What is <span class="fancy">Robo</span>Toucan</h2>
       <!-- beginning of wrapper -->
       <div class="wrapper-about">
-        <div>
-          <p class="what-is-message">
+        <div class="what-is-message js-animate">
+          <p>
             <span class="fancy">Robo</span>Toucan is a Slack Bot that lets you use support tickets on Slack. This way, you don't need to leave your beloved channel to assist your users, if you don't feel like it.
           </p>
         </div>
-        <div>
-          <p class="what-is-message">
+        <div class="what-is-message js-animate">
+          <p>
             With RoboToucan you can easily check if you've received new tickets, change their status, or write a reply, and the ticket will instantly update itself on our site.
           </p>
         </div>
       </div>
       <!-- end of wrapper -->
-      <p>
+      <p class="js-animate">
         Support requests shouldn't be handled through Slack's direct messages.<br>
         <em>Image about someone asking silly questions and the workplace admin asking him/her to open a support ticket so other admins could look into the issue.</em>
       </p>
@@ -149,31 +149,34 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="scripts/whenInViewport.min.js"></script>
   <script type="text/javascript">
-    $('.js-animate').whenInViewport(function(div) {
-      div.addClass('animated fadeInDown');
+    let e = document.querySelectorAll(".js-animate");
+    $('.js-animate').whenInViewport(function(e) {
+      e.addClass('reveal-item');
     });
 
-    $(document).ready(function(){
-    	$('.menu').click(function(){
-    		$('ul').toggleClass('active');
-    	});
+    $(document).ready(function() {
+      $('.menu').click(function() {
+        $('ul').toggleClass('active');
+      });
     });
 
-	// When the user scrolls down 20px from the top of the document, show back-to-top button
-	window.onscroll = function() {scrollFunction()};
+    // When the user scrolls down 20px from the top of the document, show back-to-top button
+    window.onscroll = function() {
+      scrollFunction()
+    };
 
-	function scrollFunction() {
-	    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-	        document.getElementById("back-to-top").style.display = "block";
-	    } else {
-	        document.getElementById("back-to-top").style.display = "none";
-	    }
-	}
-	// When the user clicks on the button, scroll to the top of the document
-	function topFunction() {
-	    document.body.scrollTop = 0; // For Safari
-	    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-	}
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("back-to-top").style.display = "block";
+      } else {
+        document.getElementById("back-to-top").style.display = "none";
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
   </script>
 </body>
 
